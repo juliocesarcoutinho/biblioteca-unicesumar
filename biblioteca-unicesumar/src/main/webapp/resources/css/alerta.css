@@ -1,0 +1,39 @@
+.alerta {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    left: auto;
+    min-width: 320px;
+    max-width: 90vw;
+    padding: 18px 32px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 500;
+    z-index: 9999;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-30px) scale(0.98);
+    transition: opacity 0.7s, transform 0.7s;
+}
+.alerta.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+}
+.alerta.fade-out {
+    opacity: 0 !important;
+    transform: translateY(-30px) scale(0.98) !important;
+    transition: opacity 0.7s, transform 0.7s;
+}
+.alerta-sucesso {
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #155724;
+    border: 1px solid #b7f5d8;
+}
+.alerta-erro {
+    background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+    color: #fff;
+    border: 1px solid #ffd6a0;
+}
+

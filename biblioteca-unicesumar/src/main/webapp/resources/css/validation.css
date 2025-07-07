@@ -1,0 +1,16 @@
+/* Estilos para a validação de formulários */
+
+/* Estilo para campos com erro */
+.input-error {
+    border-color: #e74c3c !important;
+    background-color: #fff6f6 !important;
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+    font-weight: normal;
+}
